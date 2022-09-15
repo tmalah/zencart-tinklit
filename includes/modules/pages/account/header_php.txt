@@ -1,0 +1,10 @@
+*************   Find code   ***************
+
+if (!$_SESSION['customer_id']) {
+  $_SESSION['navigation']->set_snapshot();
+  zen_redirect(zen_href_link(FILENAME_LOGIN, '', 'SSL'));
+}
+
+***********   Add after this code   ***********
+
+    tinklit_update_status();

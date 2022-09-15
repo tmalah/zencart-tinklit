@@ -1,0 +1,10 @@
+**********   Find code   **************
+
+              <tr>
+                <td class="main"><strong><?php echo TEXT_INFO_IP_ADDRESS; ?></strong></td>
+                <td class="main"><?php echo $order->info['ip_address']; ?></td>
+              </tr>
+
+********   Add after it this code:   *********
+
+<?php include_once(DIR_WS_MODULES.'tinklit_order_info.php'); ?>
